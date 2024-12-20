@@ -1,0 +1,6 @@
+git init
+git add .
+git commit -m "project setup and git setting"
+git branch -M main
+git remote add origin git@github.com:jabirstain3/KureeGhar.git
+git push -u origin main
