@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./styles/index.css">
 </head>
-<body class="border w-full max-w-[1440px] m-auto">
+<body class="w-full max-w-[1440px] m-auto">
     <div  class="w-full h-screen bg-gradient-to-b from-[#F4F4F4] to-white flex flex-col">
         <header id="navbar" class="w-full max-w-[1100px] m-auto">
             <div class="my-1 md:my-3 lg:my-5 navbar">
@@ -73,7 +73,7 @@
                         <img src="./assets/banner.png" alt="" class="object-cover m-auto">
                     </div>
                     <h1 class="text-5xl font-bold">A barn house of this design has a striking appearance</h1>
-                    <p class="py-6">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+                    <p class="paragraph py-6">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
                     <button tabindex="0" role="button" class="btn rounded-full bg-[#ABEF5F] text-xl font-extrabold">
                         View Details
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="border border-black size-8 p-[6px] bg-[#ABEF5F] rounded-full" style="color:black;">
@@ -84,6 +84,35 @@
             </div>
         </div>
     </div>
+    <main class="w-full bg-[#F4F4F4]">
+        <div id="about" class=" w-full hero py-14">
+            <div class=" hero-content flex-col lg:flex-row gap-6">
+                <div class=" w-full lg:w-1/2 p-1 text-center lg:text-left">
+                    <h1 class="headding">Box Office News!</h1>
+                    <p class="paragraph py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+
+                    <div class="mt-4 flex flex-col sm:flex-row lg:flex-col gap-4 text-left">
+                        <div class=" w-full bg-white p-5 flex justify-start items-center gap-4 rounded-2xl">
+                            <img src="./assets/commercial.png" alt="" class="w-15 h-15">
+                            <div class="">
+                                <h3 class="text-xl font-extrabold">Commercial</h3>
+                                <p class="pt-4 paragraph text-[#737373]">The barn house captivates with its blend of rustic charm and modern.</p>
+                            </div>
+                        </div>
+
+                        <div class=" w-full bg-white p-5 flex justify-start items-center gap-4 rounded-2xl">
+                            <img src="./assets/residential.png" alt="" class="w-15 h-15">
+                            <div class="">
+                                <h3 class="text-xl font-extrabold">Residential</h3>
+                                <p class="pt-4 paragraph text-[#737373]">The barn house captivates with its blend of rustic charm and modern.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="./assets/Rectangle.png" class="w-full lg:w-1/2 aspect-[3/2] lg:aspect-square rounded-3xl" />
+            </div>
+        </div>
+    </main>
 
 </body>
 </html>
