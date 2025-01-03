@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Dream Homes</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body class="w-full max-w-[1440px] m-auto">
+    <header class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-800">Dream Homes</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="text-gray-600 hover:text-gray-900">Home</a></li>
+                    <li><a href="products.html" class="text-gray-600 hover:text-gray-900">Products</a></li>
+                    <li><a href="contact.html" class="text-gray-600 hover:text-gray-900">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="py-10 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">Payment</h2>
+
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <form onsubmit="my_modal_5.showModal()">
+                    <!-- Billing Information -->
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold text-gray-800">Billing Information</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-4">
+                            <input type="text" name="firstName" placeholder="First Name*" class="input w-full rounded-lg border-gray-300">
+                            <input type="text" name="lastName" placeholder="Last Name*" class="input w-full rounded-lg border-gray-300">
+                            <input type="email" name="email" placeholder="Email Address*" class="input w-full rounded-lg border-gray-300">
+                            <input type="text" name="phone" placeholder="Phone Number*" class="input w-full rounded-lg border-gray-300">
+                            <input type="text" name="address" placeholder="Billing Address*" class="input w-full rounded-lg border-gray-300">
+                            <input type="text" name="city" placeholder="City*" class="input w-full rounded-lg border-gray-300">
+                            <input type="text" name="state" placeholder="State/Province*" class="input w-full rounded-lg border-gray-300">
+                            <input type="text" name="zip" placeholder="ZIP/Postal Code*" class="input w-full rounded-lg border-gray-300">
+                        </div>
+                    </div>
+
+                    <!-- Payment Method -->
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold text-gray-800">Payment Method</h3>
+                        <div class="mt-4">
+                            <label class="flex items-center gap-4 mb-3">
+                                <input type="radio" name="paymentMethod" value="creditCard" checked class="radio radio-primary">
+                                <span>Credit/Debit Card</span>
+                            </label>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <input type="text" name="cardNumber" placeholder="Card Number*" class="input w-full rounded-lg border-gray-300">
+                                <input type="text" name="cardName" placeholder="Cardholder Name*" class="input w-full rounded-lg border-gray-300">
+                                <input type="text" name="expiryDate" placeholder="MM/YY*" class="input w-full rounded-lg border-gray-300">
+                                <input type="text" name="cvv" placeholder="CVV*" class="input w-full rounded-lg border-gray-300">
+                            </div>
+
+                            <label class="flex items-center gap-4 mt-6">
+                                <input type="radio" name="paymentMethod" value="paypal" class="radio radio-primary">
+                                <span>PayPal</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Order Summary -->
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold text-gray-800">Order Summary</h3>
+                        <div class="mt-4 p-4 bg-gray-100 rounded-lg">
+                            <p class="flex justify-between text-gray-800">
+                                <span>Luxury Villa</span>
+                                <span>$500,000</span>
+                            </p>
+                            <p class="flex justify-between text-gray-800 mt-2">
+                                <span>Modern Apartment</span>
+                                <span>$250,000</span>
+                            </p>
+                            <hr class="my-4">
+                            <p class="flex justify-between font-bold text-gray-800">
+                                <span>Total</span>
+                                <span>$750,000</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn w-full rounded-full bg-[#ABEF5F] text-lg font-bold text-black"  >
+                        Complete Payment
+                    </button>
+                </form>
+            </div>
+        </div>
+        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+            <form method="dialog" class="modal-box grid  justify-items-center py-20">
+                <img src="images/congo.png" alt="" class="mx-auot mb-10 ">
+                <h3 class="font-bold text-5xl ">Congratulations</h3>
+                <p class="py-4 text-xl">You Purchase is Successfull</p>
+                <div class="modal-action">
+                    <a href="shop.html" class="btn border rounded-md bg-pink-600 text-white px-8 pt-2 pb-2 text-xl mx-auto">Go Home</a>
+                </div>
+            </form>
+        </dialog>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Dream Homes. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
